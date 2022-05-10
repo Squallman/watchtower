@@ -293,6 +293,7 @@ class CloudWatchLogHandler(logging.Handler):
             process_id=os.getpid(),
             thread_name=threading.current_thread().name,
             logger_name=message.name,
+            today=date.today(),
             strftime=datetime.utcnow()
         )
 
